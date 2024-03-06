@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>\
+
+       <p id="shrndmnmbr"></p>
+       <p id="brkdwn"></p>
+       <p id="shwdte"></p>
+       
+
+       <script>
+
+        var shrndmnmbr = Math.floor(Math.random() * 1001);
+
+        document.getElementById("shrndmnmbr").innerHTML = "Randomly Generated Number: " + shrndmnmbr;
+
+        var thsnds = Math.floor(shrndmnmbr/1000);
+
+        var hndrds = Math.floor((shrndmnmbr%1000)/100);
+
+        var tens = Math.floor((shrndmnmbr%100)/10);
+
+        var ones = Math.floor(shrndmnmbr%10);
+
+        document.getElementById("brkdwn").innerHTML = "breakdown: " + hndrds*100 + " " + tens*10 + " " + ones;
+
+        var date = new Date();
+        document.getElementById("shwdte").innerHTML = "Date of generation: " + date;
+
+
+
+
+
+
+
+
+       </script>
+
+
+
+</body>
+</html>
